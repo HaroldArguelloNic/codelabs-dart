@@ -1,6 +1,6 @@
-/*Imagínete que tienes una clase de carrito de compras que mantiene un privado List<double>de precios. Añádase lo siguiente:
+/*Imagínete que tienes una clase de carrito de compras que mantiene un List<double> privado de precios. Añádase lo siguiente:
 
-    Llamó una llamada. totalque devuelve la suma de los precios
+    Llamó un metodo total que devuelve la suma de los precios
     Un setter que sustituya la lista por una nueva, siempre y cuando la nueva lista no contenga ningún precio negativo (en cuyo caso el setter debería lanzar un InvalidPriceException).*/
 
 class InvalidPriceException {}
@@ -8,11 +8,11 @@ class InvalidPriceException {}
 class ShoppingCart {
   List<double> _prices = [];
   
-  // TODO: Add a "total" getter here:
+  // Add a "total" getter here
   double get total => _prices.reduce((value, element) => value + element);
   
 
-  // TODO: Add a "prices" setter here:
+  // Add a "prices" setter here
   set prices(List<double> precio){
     if(precio.any((p) => p < 0)){
       throw InvalidPriceException();
