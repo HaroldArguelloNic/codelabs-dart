@@ -10,7 +10,7 @@ class MyDataObject {
   });
 
   // Add your copyWith method here:
-  MyDataObject copyWith(int? newInt, String? newString, double? newDouble){
+  MyDataObject copyWith({int? newInt, String? newString, double? newDouble}){
     return MyDataObject(
       anInt: newInt ?? this.anInt,
       aString: newString ?? this.aString,
