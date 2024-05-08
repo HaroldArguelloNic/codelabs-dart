@@ -2,7 +2,7 @@ class FirstTwoLetters {
   final String letterOne;
   final String letterTwo;
 
-  // Create a constructor with an initializer list here:
+  // Crea el constructor con lista inicializadora
   FirstTwoLetters(String word)
     : assert(word.length >= 2),
       letterOne = word[0],
