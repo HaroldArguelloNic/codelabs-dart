@@ -7,5 +7,5 @@ main() {
   } */
 
   /* values.map(scream).forEach(print); */
-  values.skip(1).take(3).map(scream).forEach(print);
+  values.skip(1).take(3).map(scream).forEach(print);// salta el primer elemento y recorre los proximos 3 elementos
 }
