@@ -15,29 +15,29 @@ Parte 1: Implementar parseEmailAddresses().
 
 Parte 2: Implementar anyInvalidEmailAddress().
 
-    Escriba la función anyInvalidEmailAddress(), que toma un Iterable<EmailAddress>y devoluciones truesi lo hay EmailAddressen el Iterableno es válido.
+    Escriba la función anyInvalidEmailAddress(), que toma un Iterable<EmailAddress>y devuelve true si en el EmailAddress en Iterable no es válido.
     Utilir el método any()junto con la función proporcionada isValidEmailAddress().
 
 Parte 3: Implementar validEmailAddresses().
 
     Escriba la función validEmailAddresses(), que toma un Iterable<EmailAddress>y devuelve otro Iterable<EmailAddress>que contiene direcciones válidas.
     Utiliera el método where()para filtrar el Iterable<EmailAddress>.
-    Utilen la función proporcionada isValidEmailAddress()para evaluar si a EmailAddresses válido.
+    Utilen la función proporcionada isValidEmailAddress()para evaluar si a EmailAddress es válido.
 */
 
 Iterable<EmailAddress> parseEmailAddresses(Iterable<String> strings) {
   // Implement the parseEmailAddresses function.
-  return strings.map((eAddress) => EmailAddress(eAddress)); 
+  return strings.map((eAddress) => EmailAddress(eAddress)); //Se crea y retorna el objeto EmailAddress
 }
 
 bool anyInvalidEmailAddress(Iterable<EmailAddress> emails) {
   // Implement the anyInvalidEmailAddress function.
-  return emails.any((eAddress) => !isValidEmailAddress(eAddress));
+  return emails.any((eAddress) => !isValidEmailAddress(eAddress)); //retorna las EmailAddres invalidas
 }
 
 Iterable<EmailAddress> validEmailAddresses(Iterable<EmailAddress> emails) {
   // Implement the validEmailAddresses function.
-  return emails.where((eAddress) => isValidEmailAddress(eAddress));
+  return emails.where((eAddress) => isValidEmailAddress(eAddress)); //Valida y retorna las EmailAddress validas
 }
 
 class EmailAddress {
