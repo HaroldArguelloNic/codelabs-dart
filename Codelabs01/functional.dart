@@ -1,4 +1,4 @@
-String scream(int length) => "A${'a' * length}h!";
+String scream(int length) => "A${'a' * length}h!"; // retorna la letra a multiplicada por el largo 
 
 main() {
   final values=[1,2,3,5,10,50];
@@ -7,5 +7,8 @@ main() {
   } */
 
   /* values.map(scream).forEach(print); */
-  values.skip(1).take(3).map(scream).forEach(print);// salta el primer elemento y recorre los proximos 3 elementos
+  values.skip(1).   // salta el primer elemento
+  take(3).          // recorre los siguientes 3 elementos
+  map(scream).      // mapea los elementos concatenando la cantidad de a que se replican
+  forEach(print);   // recorre los elementos del iterable y los envia a pantalla.
 }
