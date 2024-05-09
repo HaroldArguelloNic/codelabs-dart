@@ -37,6 +37,7 @@ void main() {
       );
       return;
     }
+    print(out);
   } on UnimplementedError {
     print(
       'Tried running `getNameAndAges`, but received an error. '
@@ -49,6 +50,7 @@ void main() {
   }
 
   print('Success. All tests passed!');
+  
 }
 
 bool _listEquals<T>(List<T>? a, List<T>? b) {
