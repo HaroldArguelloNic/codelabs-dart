@@ -4,9 +4,7 @@ class Bicycle { //definicion de la clase Bicycle
   int get speed => _speed; //Uso de funcion flecha o lambda para obtener el valor de velocidad
   int gear;
 
-
 Bicycle(this.cadence, this.gear); // constructor de la clase
-
 
 void apply_Break(int decrement){    //Funcion que decrementa la velocidad
   _speed -= decrement;
