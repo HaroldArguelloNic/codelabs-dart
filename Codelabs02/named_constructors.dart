@@ -3,11 +3,12 @@ class Color {
   int green;
   int blue;
   
-  Color(this.red, this.green, this.blue);
+  Color(this.red, this.green, this.blue); //uso de this en el constructor
 
   // Create a named constructor called "Color.black" here:
-  Color.black()
-    : red=0,
+  Color.black()   //constructor con nombre
+  //lista inicializador en el constructor
+    : red=0,    
       green=0,
       blue=0;
 

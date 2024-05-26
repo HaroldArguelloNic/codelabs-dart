@@ -4,7 +4,7 @@ class FirstTwoLetters {
 
   // Crea el constructor con lista inicializadora
   FirstTwoLetters(String word)
-    : assert(word.length >= 2),
+    : assert(word.length >= 2), //assert asegura que el tamaño de la palabra sea >= 2
       letterOne = word[0],
       letterTwo = word[1];
     

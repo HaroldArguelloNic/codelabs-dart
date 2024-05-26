@@ -16,8 +16,8 @@ void tryFunction(VoidFunction untrustworthy, Logger logger) {
   
   try {
     untrustworthy();  //llamada al metodo untrustworthy
-  } on ExceptionWithMessage catch (e) {   // uso del catch 
-    logger.logException(e.runtimeType,e.message);
+  } on ExceptionWithMessage catch (e) {   // uso del catch para el manejo de la exepcion
+    logger.logException(e.runtimeType,e.message); //
   } on Exception {
     logger.logException(Exception);
   } finally {

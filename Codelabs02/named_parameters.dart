@@ -10,9 +10,9 @@ class MyDataObject {
   });
 
   // Add your copyWith method here:
-  MyDataObject copyWith({int? newInt, String? newString, double? newDouble}){
+  MyDataObject copyWith({int? newInt, String? newString, double? newDouble}){     //parametros con nombre
     return MyDataObject(
-      anInt: newInt ?? this.anInt,
+      anInt: newInt ?? this.anInt,                     /* ?? operador con reconocimiento de nulos */
       aString: newString ?? this.aString,
       aDouble: newDouble ?? this.aDouble,
     );
