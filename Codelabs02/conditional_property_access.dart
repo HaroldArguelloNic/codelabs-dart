@@ -2,8 +2,6 @@ String? upperCaseIt(String? str) {
   
   return str?.toUpperCase(); //Retornamos y evaluamos la variable del parametro si es null
 }
-
-
 //Evaluamos la solucion
 void main() {
   try {

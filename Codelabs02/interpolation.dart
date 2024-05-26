@@ -3,10 +3,8 @@
 String stringify(int x, int y) {
   
   return '$x $y'; //se retornan las variables entre comillas sencillas para realizar la interpolacion
-
   
 }
-
 
 // Tests your solution (Don't edit!): 
 void main() {

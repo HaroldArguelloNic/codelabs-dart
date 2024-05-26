@@ -1,5 +1,5 @@
-String? name='Jane';
-String? address;
+String? name='Jane';    //variables nullable
+String? address;        //variables nullable
 
 
 // Tests your solution (Don't edit!): 

@@ -56,7 +56,7 @@ void main() {
     return;
   }
 
-//valida que la lista errs que se encuentre vacia
+//valida que la lista errs se encuentre vacia
   if (errs.isEmpty) {
     print('Success!');
   } else {
